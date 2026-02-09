@@ -1,0 +1,51 @@
+Invalid data at line 8: 'ABC'
+Invalid data at line 21: 'ERR'
+Invalid data at line 41: 'VAL'
+-39 -> binary: -100111, hex: FFFFFFD9
+-36 -> binary: -100100, hex: FFFFFFDC
+8 -> binary: 1000, hex: 8
+34 -> binary: 100010, hex: 22
+17 -> binary: 10001, hex: 11
+49 -> binary: 110001, hex: 31
+5 -> binary: 101, hex: 5
+0 -> binary: 0, hex: 0
+33 -> binary: 100001, hex: 21
+12 -> binary: 1100, hex: C
+-6 -> binary: -110, hex: FFFFFFFA
+27 -> binary: 11011, hex: 1B
+-4 -> binary: -100, hex: FFFFFFFC
+-38 -> binary: -100110, hex: FFFFFFDA
+26 -> binary: 11010, hex: 1A
+49 -> binary: 110001, hex: 31
+29 -> binary: 11101, hex: 1D
+42 -> binary: 101010, hex: 2A
+-16 -> binary: -10000, hex: FFFFFFF0
+34 -> binary: 100010, hex: 22
+20 -> binary: 10100, hex: 14
+0 -> binary: 0, hex: 0
+25 -> binary: 11001, hex: 19
+45 -> binary: 101101, hex: 2D
+3 -> binary: 11, hex: 3
+-46 -> binary: -101110, hex: FFFFFFD2
+-46 -> binary: -101110, hex: FFFFFFD2
+29 -> binary: 11101, hex: 1D
+33 -> binary: 100001, hex: 21
+29 -> binary: 11101, hex: 1D
+26 -> binary: 11010, hex: 1A
+-5 -> binary: -101, hex: FFFFFFFB
+-36 -> binary: -100100, hex: FFFFFFDC
+12 -> binary: 1100, hex: C
+45 -> binary: 101101, hex: 2D
+-50 -> binary: -110010, hex: FFFFFFCE
+0 -> binary: 0, hex: 0
+-6 -> binary: -110, hex: FFFFFFFA
+Execution Time (s): 0.00015425682067871094
+
+--- PYLINT EVALUATION ---
+
+************* Module convertNumbers
+4.2/P2/source/convertNumbers.py:1:0: C0103: Module name "convertNumbers" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.83/10 (previous run: 9.83/10, +0.00)
+
