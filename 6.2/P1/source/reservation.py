@@ -12,7 +12,14 @@ class Reservation:
     Represents a reservation entity connecting a customer and a hotel.
     """
 
-    def __init__(self, reservation_id, customer_id, hotel_id, check_in, check_out):
+    def __init__(
+        self,
+        reservation_id,
+        customer_id,
+        hotel_id,
+        check_in,
+        check_out
+    ):
         """
         Initialize a Reservation instance.
 
@@ -53,8 +60,10 @@ class Reservation:
 
         try:
             return datetime.strptime(date_str, "%Y-%m-%d").date()
-        except ValueError:
-            raise ValueError("Date must be in YYYY-MM-DD format")
+        except ValueError as exc:
+            raise ValueError(
+                "Date must be in YYYY-MM-DD format"
+            ) from exc
 
     def to_dict(self):
         """
@@ -78,7 +87,13 @@ class Reservation:
         :param data: dict
         :return: Reservation instance
         """
-        required_fields = {"reservation_id", "customer_id", "hotel_id", "check_in", "check_out"}
+        required_fields = {
+            "reservation_id",
+            "customer_id",
+            "hotel_id",
+            "check_in",
+            "check_out",
+        }
         if not required_fields.issubset(data.keys()):
             raise ValueError("Missing required reservation fields")
 
@@ -103,4 +118,3 @@ class Reservation:
             f"Check-in: {self.check_in}\n"
             f"Check-out: {self.check_out}"
         )
-    
